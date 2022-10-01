@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-weight: 400;
+}
+
+section,
+footer,
+nav {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-left: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hero div {
+  width: 50%;
+}
+
+.hero img {
+  width: 50%;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 2.3rem;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.hero form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero input {
+  margin-right: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem;
+}
+.hero input[type="text"] {
+  width: 50%;
+  border-width: 1px;
+}
+
+input[type="text"]:focus {
+  border: none;
+  border-color: red;
+  border-width: 3px;
+}
+
+.hero input[type="submit"] {
+  width: 35%;
+  color: #fff;
+  background-color: hsl(224, 93%, 58%);
+  border-color: hsl(224, 93%, 58%);
+  border-width: 1px;
+}
+
+.productive {
+  background-image: url("./images/bg-curve-desktop.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.productive {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.productive div {
+  width: 60%;
+}
+.productive > img {
+  width: 40%;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.productive a {
+  color: hsl(170, 45%, 43%);
+  padding-bottom: 0.3rem;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: hsl(170, 45%, 43%);
+  margin-bottom: 2rem;
+}
+
+.testimonial {
+  width: 75% !important;
+  margin-top: 2rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px hsl(0, 0%, 75%);
+  padding: 2rem;
+}
+
+.testimonial:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.testimonial > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+}
+
+.testimonial > img {
+  width: 40px;
+}
+
+.testimonial > div img {
+  width: 13%;
+  border-radius: 100%;
+  margin: 1rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.access {
+  background-color: hsl(238, 22%, 44%);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.access > div {
+  width: 48%;
+}
+
+.access form {
+  width: 48%;
+}
+
+.access div form input[type="text"] {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+input[type="submit"]:hover,
+a:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.access input[type="submit"] {
+  padding: 0.5rem 1rem;
+  background-color: hsl(224, 93%, 58%);
+  border-color: hsl(224, 93%, 58%);
+  color: #fff;
+}
+
+.access h2 {
+  color: #fff;
+}
+
+footer {
+  background-color: hsl(243, 87%, 12%);
+  padding-top: 3rem;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+}
+
+footer > div {
+  padding-bottom: 3rem;
+}
+
+footer > div > div {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: hsl(0, 0%, 75%);
+}
+
+.social_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.social_list li {
+  margin-right: 1rem;
+}
+
+.social_list li a i {
+  padding: 7px 10px;
+  border-radius: 100%;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.social_list li a i:hover {
+  color: hsl(224, 93%, 58%);
+}
+
+.contact_list li,
+.menu_list li,
+.about_menu li {
+  margin-bottom: 1rem;
+}
+
+.menu_list li:hover,
+.about_menu li:hover {
+  color: hsl(224, 93%, 58%) !important;
+  cursor: pointer !important;
+}
+
+.contact_list li img {
+  margin-right: 1rem;
+}
+
+.attribution {
+  text-align: center;
+  margin-bottom: 0;
+  color: hsl(0, 0%, 75%);
+}
+
+.attribution a {
+  color: hsl(224, 93%, 58%);
+}
+
+@media screen and (max-width: 400px) {
+  section,
+  footer,
+  nav {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  nav img {
+    max-width: 15%;
+  }
+
+  nav ul {
+    max-width: 90%;
+  }
+
+  .hero, .productive {
+    flex-direction: column-reverse !important;
+  }
+
+  .hero > div,
+  .hero > img,
+  .productive > div,
+  .productive > img,
+  .productive .testimonial {
+    min-width: 100% !important;
+    max-width: 100% !important;
+    text-align: center;
+  }
+
+  .productive > div > p,
+  .productive .testimonial {
+    text-align: start;
+  }
+
+  .productive .testimonial img {
+    width: auto !important;
+  }
+
+  h3 {
+    font-size: .7;
+  }
+
+  .productive .testimonial>div img {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .productive .testimonial>div p {
+    font-size: 14px !important;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  form input {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .hero input[type="text"] {
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .access div, .access form {
+    width: 100%;
+    text-align: center;
+  }
+
+  footer div div, footer ul {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .social_list {
+    justify-content: center;
+  }
+
+}
